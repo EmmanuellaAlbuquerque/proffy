@@ -5,10 +5,12 @@
 ### Como rodar ?
 
 #### Configurando o Ambiente
-[Configurando Ambiente NLW](https://www.notion.so/Configurando-Ambiente-NLW-98a471ad3cb6448284b8ceed31c45767)
+[Ambiente NLW](https://www.notion.so/Configurando-Ambiente-NLW-98a471ad3cb6448284b8ceed31c45767)
 
-1. yarn install
-2. yarn start
+```console
+foo@bar:~$ yarn install
+foo@bar:~$ yarn start
+```
 
 #### Recriando banco SQLite
 1. Deletar arquivo database.sqlite na pasta database

@@ -13,16 +13,10 @@
 </div>
 
 
-### Ferramentas de Prototipagem :rocket:
-[Proffy-Web](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web)
-
-<br />
-
-[Proffy-Mobile](https://www.figma.com/file/e33KvgUpFdunXxJjHnK7CG/Proffy-Mobile)
-
-<br />
-
-[Whimsical NLW 02](https://whimsical.com/4Ug5pJLABvCj2NWQXyuK38)
+### :rocket: Ferramentas de Prototipagem
+- [Proffy-Web](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web)
+- [Proffy-Mobile](https://www.figma.com/file/e33KvgUpFdunXxJjHnK7CG/Proffy-Mobile)
+- [Whimsical NLW 02](https://whimsical.com/4Ug5pJLABvCj2NWQXyuK38)
 
 
 ### Aula 1 - Proffy-Web
