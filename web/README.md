@@ -2,6 +2,7 @@
 - ReactJS
 - Sigle Page Applications (SPAs)
 - Mobile First
+- [Whatsapp click to chat](https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/)
 
 ### Como rodar?
 
@@ -20,5 +21,7 @@ foo@bar:~$ yarn create react-app web --template typescript
 foo@bar:~$ yarn add react-router-dom
 
 foo@bar:~$ yarn add @types/react-router-dom -D
-```
 
+# Consumindo APIs externas da forma que o Insomnia faz
+foo@bar:~$ yarn add axios
+```
