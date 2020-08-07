@@ -22,7 +22,7 @@ Tabela de conteúdos
    * [Como rodar ?](#run)
       * [Front-End Web](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/web#como-rodar)
       * [Back-End Node.js](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/server#como-rodar-)
-      * [Front-End Mobile](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/mobile#como-rodar-)
+      * [Front-End Mobile](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/mobile#como-rodar)
    * [Tecnologias](#hammer-Tecnologias)
 
 <h4 align="center"> 
@@ -83,13 +83,25 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [x] Páginas internas
 - [x] Navegação em abas
 - [x] Componente Page Header
+
+#### Aula 5: Finalizando app mobile
 - [x] Lista de professores
+- [x] Lista de professores
+- [x] Filtro de professores
+- [x] Conectando com a API
+  - [x] Total de conexões
+  - [x] Lista de professores
+- [x] Contato via Whatsapp
+- [x] Adicionando e removendo favoritos
+- [x] Listando favoritos
 
 ### Ferramentas de Prototipagem
 - [Proffy-Web](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web)
 - [Proffy-Mobile](https://www.figma.com/file/e33KvgUpFdunXxJjHnK7CG/Proffy-Mobile)
 - [Whimsical NLW 02](https://whimsical.com/4Ug5pJLABvCj2NWQXyuK38)
 - [Notion NLW 02](https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)
+- [Proffy Versão 2.0](https://www.notion.so/Vers-o-2-0-Proffy-eefca1b981694cd0a895613bc6235970)
+
 
 ### Autor
 ---
