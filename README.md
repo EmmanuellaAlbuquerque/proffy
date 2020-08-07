@@ -74,6 +74,17 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [x] Cadastro de novas aulas
 - [x] Listagem de professores
 
+#### Aula 4: Estruturando app mobile
+- [x] Criando projeto com expo
+- [x] Estruturando Landing Page
+- [x] Estilizando Landing Page
+- [x] Navegação da Landing Page
+- [x] Página de "Dar aulas"
+- [x] Páginas internas
+- [x] Navegação em abas
+- [x] Componente Page Header
+- [x] Lista de professores
+
 ### Ferramentas de Prototipagem
 - [Proffy-Web](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web)
 - [Proffy-Mobile](https://www.figma.com/file/e33KvgUpFdunXxJjHnK7CG/Proffy-Mobile)
