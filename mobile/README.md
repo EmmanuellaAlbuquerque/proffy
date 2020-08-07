@@ -8,36 +8,38 @@
 
 ```sh
 # Instala as dependências
-foo@bar:~$ yarn install
+~$ yarn install
 # Executa o projeto
-foo@bar:~$ yarn start
+~$ yarn start
 ```
 
 ### Criando o Projeto e Instalando dependências
 ```sh
 # Instalando Expo Ubuntu e derivados
-foo@bar:~$ sudo yarn global add expo-cli
+~$ sudo yarn global add expo-cli
 
 # Iniciando o projeto
-foo@bar:~$ expo init mobile
+~$ expo init mobile
 
 # Muda o diretório para a pasta mobile
-foo@bar:~$ cd mobile
+~$ cd mobile
 
 # Instalando as fontes utilizadas no projeto
-foo@bar:~$ expo install expo-font @expo-google-fonts/archivo @expo-google-fonts/poppins
+~$ expo install expo-font @expo-google-fonts/archivo @expo-google-fonts/poppins
 
 # Instalando dependências de navegação
-foo@bar:~$ yarn add @react-navigation/native
+~$ yarn add @react-navigation/native
 
 # https://reactnavigation.org/docs/getting-started
-foo@bar:~$ expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+~$ expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
 
 # Stack navigation
-foo@bar:~$ yarn add @react-navigation/stack
+~$ yarn add @react-navigation/stack
 
 # Tab navigation
-foo@bar:~$ yarn add @react-navigation/bottom-tabs
+~$ yarn add @react-navigation/bottom-tabs
 ```
+
+<br />
 
 [Estilo das Abas](https://www.notion.so/Ajustando-estilo-das-abas-no-iOS-28a059b0c443405da195f0ebf7307905)

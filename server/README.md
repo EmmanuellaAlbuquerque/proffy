@@ -9,10 +9,10 @@
 
 ```sh
 # Instala as dependências
-foo@bar:~$ yarn install
+~$ yarn install
 
 # Executa o projeto
-foo@bar:~$ yarn start
+~$ yarn start
 ```
 
 #### Recriando banco SQLite
@@ -21,7 +21,7 @@ foo@bar:~$ yarn start
 
 ### Rotas
 
-[Arquivo do Insomnia](server/src/utils/Insomnia_2020-08-06.json)
+[Arquivo do Insomnia](src/utils/Insomnia_2020-08-06.json)
 
 #### api
 > http://localhost:3333
@@ -139,33 +139,33 @@ Response:
 ### Criando o Projeto e Instalando dependências
 ```sh
 # Inicia arquivo de gerenciamento de dependências
-foo@bar:~$ yarn init -y
+~$ yarn init -y
 
 # Instala o typescript 
-foo@bar:~$ yarn add typescript -D
+~$ yarn add typescript -D
 
 # Cria arquivo de configuração do typescript
-foo@bar:~$ yarn tsc --init
+~$ yarn tsc --init
 
 # Auto-reload para Nodejs com TypeScript
-foo@bar:~$ yarn add ts-node-dev -D
+~$ yarn add ts-node-dev -D
 
 # Framework Node.js que auxilia na construção de aplicações web. 
-foo@bar:~$ yarn add express
+~$ yarn add express
 
 # Tipagem do Express
-foo@bar:~$ yarn add @types/express -D
+~$ yarn add @types/express -D
 
 # SQL Query Builder para Javascript (Construtor de Consulta)
 # knex sqlite module
-foo@bar:~$ yarn add knex sqlite3
+~$ yarn add knex sqlite3
 
 # Cross-origin resource sharing: compartilhando
 # recursos entre diferentes origens.
-foo@bar:~$ yarn add cors
+~$ yarn add cors
 
 # Tipagem do Cors
-foo@bar:~$ yarn add @types/cors -D
+~$ yarn add @types/cors -D
 ```
 
 ### Identificando casos de uso
