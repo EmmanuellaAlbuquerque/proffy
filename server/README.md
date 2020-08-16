@@ -166,6 +166,10 @@ Response:
 
 # Tipagem do Cors
 ~$ yarn add @types/cors -D
+
+~$ yarn add bcrypt
+
+~$ yarn add jwt-tokens
 ```
 
 ### Identificando casos de uso

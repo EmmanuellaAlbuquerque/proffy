@@ -26,7 +26,7 @@ export default class ClassesControler {
 
     const timeInMinutes = convertHourToMinutes(time);
 
-    // Iner Join
+    // Inner Join
     const classes = await db('classes')
       .whereExists(function() {
         this.select('class_schedule.*')
