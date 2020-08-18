@@ -9,18 +9,18 @@
   background-color: var(--color-primary);
   background-image: url('../../assets/images/success-background.svg');
   background-size: contain;
-  padding: 1.0rem;
+  padding: 1rem;
 }
 
 #page-login .brand-container .brand-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 4.0rem;
+  padding-left: 4rem;
 }
 
 .brand-container .brand-content img {
-  height: 3.0rem;
+  height: 3rem;
 }
 
 .brand-container .brand-content h3 {
@@ -37,13 +37,12 @@
 }
 
 .login-container .login-content h1 {
-  font: 700 2.0rem Poppins;
-  color: #32264D;
-  margin-bottom: 1.0rem;
-  margin-top: 1.0rem;
+  font: 700 2rem Poppins;
+  color: #32264d;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
-/* continue from here */
 .login-container .login-content .emailInput,
 .login-container .login-content .passwordInput {
   width: 35.2rem;
@@ -66,17 +65,17 @@
 .login-container .login-content span,
 .login-container .login-content .eye {
   font: 500 1.6rem Poppins;
-  height: 7.0rem;
-  position: absolute; 
+  height: 7rem;
+  position: absolute;
   top: 0;
   left: 2.4rem;
-  
+
   display: flex;
   align-items: center;
-  
+
   transform-origin: 0% 0%;
-  
-  transition: .1s ease-in-out;
+
+  transition: 0.1s ease-in-out;
   color: var(--color-text-complement);
 }
 
@@ -84,10 +83,10 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
-  appearance:none;
+  appearance: none;
   outline: none;
 
-  background: url('../../assets/images/icons/eyes.svg') no-repeat; 
+  background: url('../../assets/images/icons/eyes.svg') no-repeat;
 
   left: 30rem;
   width: 2.4rem;
@@ -96,13 +95,15 @@
 }
 
 .login-container .login-content .eye:checked {
-  background: url('../../assets/images/icons/eyesSelected.svg') no-repeat;
+  background: url('../../assets/images/icons/eyesSelected.svg')
+    no-repeat;
 }
 
 .login-container .login-content .options {
   display: flex;
   justify-content: space-between;
-  margin-top: 3.0rem;
+  margin-top: 3rem;
+  font-size: 1.4rem;
 }
 
 .login-container .login-content .options label {
@@ -115,20 +116,21 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
-  appearance:none;
+  appearance: none;
   outline: none;
   border: 0.1rem solid var(--color-secundary);
 
   margin-right: 1.5rem;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 0.7rem;
 }
 
 .login-container .login-content .options .rememberMe:checked {
-  background: var(--color-secundary) url('../../assets/images/icons/verified.svg') no-repeat; 
+  background: var(--color-secundary)
+    url('../../assets/images/icons/verified.svg') no-repeat;
   background-position: 50% 50%;
-  background-size: 1.0rem 1.0rem;
+  background-size: 1rem 1rem;
 }
 
 .login-container .login-content .options a,
@@ -154,7 +156,7 @@ input:invalid {
 
 .scaledPlaceholder {
   left: 1.8rem !important;
-  transform: scale(.7) translateY(-10px);
+  transform: scale(0.7) translateY(-10px);
 }
 
 .login-container .login-content button {
@@ -174,7 +176,8 @@ input:invalid {
   margin-top: 3.2rem;
 }
 
-.login-container .login-content button:hover {
+.login-container .login-content button:hover,
+.login-container .login-content button:active {
   background-color: var(--color-secundary-dark);
 }
 
@@ -192,11 +195,11 @@ input:invalid {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10.0rem;
+  margin-top: 10rem;
+  font-size: 1.4rem;
 }
 
 .login-container .login-content .loginFooter h5 {
-  font-size: 1.6rem;
   color: var(--color-text-base);
 }
 
@@ -211,8 +214,8 @@ input:invalid {
 }
 
 .login-container .login-content .loginFooter .itsFree h6 {
-  font-size: 1.2rem;
-  margin-right: 1.0rem;
+  font-size: 1rem;
+  margin-right: 1rem;
   color: var(--color-text-complement);
 }
 
@@ -224,20 +227,16 @@ input:invalid {
 @media (min-width: 700px) {
   #page-login {
     display: flex;
-    width: 100vw;
-    height: 100vh;
   }
 
   #page-login .brand-container {
     width: 50%;
 
-    background-color: var(--color-primary);
-    background-image: url('../../assets/images/success-background.svg');
-    background-size: contain;
-
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 0rem;
   }
 
   #page-login .brand-container .brand-content {
@@ -250,198 +249,37 @@ input:invalid {
 
   .brand-container .brand-content h3 {
     max-width: 200px;
-    font-size: 2.0rem;
-    color: var(--color-text-in-primary);
-    font-weight: 500;
+    font-size: 2rem;
   }
 
   #page-login .login-container {
     width: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .login-container .login-content h1 {
     font: 700 3.6rem Poppins;
-    color: #32264D;
-    margin-bottom: 3.0rem;
-  }
-
-  .login-container .login-content .emailInput,
-  .login-container .login-content .passwordInput {
-    width: 35.2rem;
-    height: 7.2rem;
-    margin-top: 0;
-    border-radius: 0;
-    font: 500 1.6rem Poppins;
-  }
-
-  .login-container .login-content .emailInput {
-    border-top-left-radius: 0.8rem;
-    border-top-right-radius: 0.8rem;
-  }
-
-  .login-container .login-content .passwordInput {
-    border-bottom-left-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
-  }
-
-  .login-container .login-content span,
-  .login-container .login-content .eye {
-    font: 500 1.6rem Poppins;
-    height: 7.0rem;
-    position: absolute; 
-    top: 0;
-    left: 2.4rem;
-    
-    display: flex;
-    align-items: center;
-    
-    transform-origin: 0% 0%;
-    
-    transition: .1s ease-in-out;
-    color: var(--color-text-complement);
-  }
-
-  .login-container .login-content .eye {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance:none;
-    outline: none;
-
-    background: url('../../assets/images/icons/eyes.svg') no-repeat; 
-
-    left: 30rem;
-    width: 2.4rem;
-    height: 2.4rem;
-    margin-top: 2.4rem;
-  }
-
-  .login-container .login-content .eye:checked {
-    background: url('../../assets/images/icons/eyesSelected.svg') no-repeat;
+    margin-bottom: 3rem;
+    margin-top: 0rem;
   }
 
   .login-container .login-content .options {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3.0rem;
-  }
-
-  .login-container .login-content .options label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.6rem;
   }
 
   .login-container .login-content .options .rememberMe {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance:none;
-    outline: none;
-    border: 0.1rem solid var(--color-secundary);
-
-    margin-right: 1.5rem;
     width: 2.4rem;
     height: 2.4rem;
-    border-radius: 0.7rem;
-  }
-
-  .login-container .login-content .options .rememberMe:checked {
-    background: var(--color-secundary) url('../../assets/images/icons/verified.svg') no-repeat; 
-    background-position: 50% 50%;
-    background-size: 1.0rem 1.0rem;
-  }
-
-  .login-container .login-content .options a,
-  .login-container .login-content .options label {
-    color: var(--color-text-complement);
-  }
-
-  .login-container .login-content .options a {
-    text-decoration: none;
-  }
-
-  .relativeInputSpan {
-    position: relative;
-  }
-
-  .input-block {
-    margin-top: 0 !important;
-  }
-
-  input:invalid {
-    box-shadow: none;
-  }
-
-  .scaledPlaceholder {
-    left: 1.8rem !important;
-    transform: scale(.7) translateY(-10px);
-  }
-
-  .login-container .login-content button {
-    width: 100%;
-    height: 5.6rem;
-    background: var(--color-secundary);
-    color: var(--color-button-text);
-    border: 0;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    font: 700 1.6rem Archivo;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: background-color 0.2s;
-    margin-top: 3.2rem;
-  }
-
-  .login-container .login-content button:hover {
-    background-color: var(--color-secundary-dark);
-  }
-
-  .login-container .login-content .disabled {
-    cursor: not-allowed;
-    color: var(--color-text-complement);
-    background: var(--color-login-button-primary);
-  }
-
-  .login-container .login-content .disabled:hover {
-    background-color: var(--color-login-button-primary);
   }
 
   .login-container .login-content .loginFooter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10.0rem;
+    font-size: 1.6rem;
   }
 
   .login-container .login-content .loginFooter h5 {
     font-size: 1.6rem;
-    color: var(--color-text-base);
-  }
-
-  .login-container .login-content .loginFooter strong {
-    color: var(--color-primary);
-    text-decoration: underline;
-    font-weight: 700;
-  }
-
-  .login-container .login-content .loginFooter .itsFree {
-    display: flex;
   }
 
   .login-container .login-content .loginFooter .itsFree h6 {
     font-size: 1.2rem;
-    margin-right: 1.0rem;
-    color: var(--color-text-complement);
-  }
-
-  .login-container .login-content .loginFooter .itsFree img {
-    opacity: 0.5;
   }
 }
