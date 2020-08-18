@@ -104,7 +104,7 @@ function Login() {
                 Lembrar-me
               </label>
 
-              <a href="#">Esqueci minha senha</a>
+              <a href="/forgotPassword">Esqueci minha senha</a>
             </div>
 
             <button type="submit" className="disabled">
@@ -115,7 +115,7 @@ function Login() {
           <div className="loginFooter">
             <div className="makeYourAccount">
               <h5>Não tem conta?</h5>
-              <a href="">
+              <a href="/register">
                 <strong>Cadastre-se</strong>
               </a>
             </div>

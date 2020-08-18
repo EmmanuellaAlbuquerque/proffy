@@ -1,3 +1,7 @@
+body {
+  background-color: var(--color-background) !important;
+}
+
 #page-login {
   width: 100vw;
   height: 100vh;
@@ -223,7 +227,6 @@ input:invalid {
   opacity: 0.5;
 }
 
-/* tirar as coisas duplicadas depois  de fazer o mobile */
 @media (min-width: 700px) {
   #page-login {
     display: flex;
@@ -241,6 +244,7 @@ input:invalid {
 
   #page-login .brand-container .brand-content {
     display: block;
+    padding-left: 0rem;
   }
 
   .brand-container .brand-content img {
