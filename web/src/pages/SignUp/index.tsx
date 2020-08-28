@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import Input from '../../components/Input';
-
 import logo from '../../assets/images/logo.svg';
 import backIcon from '../../assets/images/icons/back.svg';
 
@@ -10,6 +10,7 @@ import './styles.css';
 
 // sign up
 function SignUp() {
+  const history = useHistory();
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -64,7 +65,7 @@ function SignUp() {
   }
 
   function handleUserSignUp() {
-    alert('Cadastro Concluído com Sucesso!');
+    history.push('/signedup');
   }
 
   return (
