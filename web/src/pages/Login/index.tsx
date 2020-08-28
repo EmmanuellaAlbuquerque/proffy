@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
 
@@ -7,6 +8,7 @@ import purpleHeart from '../../assets/images/icons/purple-heart.svg';
 
 import './styles.css';
 
+// sign in
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -115,9 +117,9 @@ function Login() {
           <div className="loginFooter">
             <div className="makeYourAccount">
               <h5>Não tem conta?</h5>
-              <a href="/register">
+              <Link to="/signup">
                 <strong>Cadastre-se</strong>
-              </a>
+              </Link>
             </div>
 
             <div className="itsFree">

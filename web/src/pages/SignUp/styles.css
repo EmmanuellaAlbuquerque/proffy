@@ -1,0 +1,205 @@
+body {
+  background-color: var(--color-background) !important;
+}
+
+#page-signup {
+  width: 100vw;
+  height: 100vh;
+}
+
+#page-signup .brand-container {
+  width: 100%;
+
+  background-color: var(--color-primary);
+  background-image: url('../../assets/images/success-background.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100vw 80vh;
+  padding: 1rem;
+}
+
+#page-signup .brand-container .brand-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4rem;
+}
+
+.brand-container .brand-content img {
+  height: 3rem;
+}
+
+.brand-container .brand-content h3 {
+  max-width: 150px;
+  font-size: 1.4rem;
+  color: var(--color-text-in-primary);
+  font-weight: 500;
+}
+
+#page-signup .signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container .signup-content h1 {
+  font: 700 2rem Poppins;
+  color: #32264d;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem;
+}
+
+.signup-container .signup-content h4 {
+  margin-bottom: 5rem;
+  width: 250px;
+  font-weight: 500;
+}
+
+.signup-container .signup-content .emailInput,
+.signup-container .signup-content .passwordInput,
+.signup-container .signup-content .nameInput,
+.signup-container .signup-content .lastNameInput {
+  width: 35.2rem;
+  height: 7.2rem;
+  margin-top: 0;
+  border-radius: 0;
+  font: 500 1.6rem Poppins;
+}
+
+.signup-container .signup-content .nameInput {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.signup-container .signup-content .passwordInput {
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.signup-container .signup-content span,
+.signup-container .signup-content .eye {
+  font: 500 1.6rem Poppins;
+  height: 7rem;
+  position: absolute;
+  top: 0;
+  left: 2.4rem;
+
+  display: flex;
+  align-items: center;
+
+  transform-origin: 0% 0%;
+
+  transition: 0.1s ease-in-out;
+  color: var(--color-text-complement);
+}
+
+.signup-container .signup-content .eye {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+
+  background: url('../../assets/images/icons/eyes.svg') no-repeat;
+
+  left: 30rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.signup-container .signup-content .eye:checked {
+  background: url('../../assets/images/icons/eyesSelected.svg')
+    no-repeat;
+}
+
+.relativeInputSpan {
+  position: relative;
+}
+
+input:invalid {
+  box-shadow: none;
+}
+
+.scaledPlaceholder {
+  left: 1.8rem !important;
+  transform: scale(0.7) translateY(-10px);
+}
+
+.signup-container .signup-content button {
+  width: 100%;
+  height: 5.6rem;
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
+}
+
+.signup-container .signup-content button:hover,
+.signup-container .signup-content button:active {
+  background-color: var(--color-secundary-dark);
+}
+
+.signup-container .signup-content .disabled {
+  cursor: not-allowed;
+  color: var(--color-text-complement);
+  background: var(--color-login-button-primary);
+}
+
+.signup-container .signup-content .disabled:hover {
+  background-color: var(--color-login-button-primary);
+}
+
+.signup-container .signup-content #comeBack {
+  position: absolute;
+  top: 10px;
+  margin-bottom: 10rem;
+}
+
+@media (min-width: 700px) {
+  #page-signup {
+    display: flex;
+  }
+
+  #page-signup .brand-container {
+    width: 768px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0rem;
+  }
+
+  #page-signup .brand-container .brand-content {
+    display: block;
+    padding-left: 0rem;
+  }
+
+  .brand-container .brand-content img {
+    height: 10rem;
+  }
+
+  .brand-container .brand-content h3 {
+    max-width: 200px;
+    font-size: 2rem;
+  }
+
+  #page-signup .signup-container {
+    width: calc(100% - 768px);
+  }
+
+  .signup-container .signup-content h1 {
+    font: 700 3.6rem Poppins;
+    margin-bottom: 3rem;
+    margin-top: 0rem;
+  }
+}

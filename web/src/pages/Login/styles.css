@@ -12,7 +12,9 @@ body {
 
   background-color: var(--color-primary);
   background-image: url('../../assets/images/success-background.svg');
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100vw 80vh;
   padding: 1rem;
 }
 
@@ -233,7 +235,7 @@ input:invalid {
   }
 
   #page-login .brand-container {
-    width: 50%;
+    width: 768px;
 
     display: flex;
     justify-content: center;
@@ -257,7 +259,7 @@ input:invalid {
   }
 
   #page-login .login-container {
-    width: 50%;
+    width: calc(100% - 768px);
   }
 
   .login-container .login-content h1 {
