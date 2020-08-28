@@ -58,7 +58,7 @@ function SignUp() {
     name && lastName && email && password
       ? button.classList.remove('disabled')
       : button.classList.add('disabled');
-  }, [email, password]);
+  }, [name, lastName, email, password]);
 
   function toggleChangePasswordView() {
     setEyeSelected(!eyeSelected);

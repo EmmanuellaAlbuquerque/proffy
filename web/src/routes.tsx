@@ -8,6 +8,7 @@ import TeacherForm from './pages/TeacherForm';
 import SignUp from './pages/SignUp';
 import SignUpCompleted from './pages/SignUpCompleted';
 import ForgotPassword from './pages/ForgotPassword';
+import ResetCompleted from './pages/ResetCompleted';
 
 function Routes() {
   return (
@@ -16,6 +17,7 @@ function Routes() {
       <Route path="/signup" component={SignUp} />
       <Route path="/signedup" component={SignUpCompleted} />
       <Route path="/forgotPassword" component={ForgotPassword} />
+      <Route path="/reset" component={ResetCompleted} />
       <Route path="/home" component={Lading} />
       <Route path="/study" component={TeacherList} />
       <Route path="/give-classes" component={TeacherForm} />

@@ -1,4 +1,4 @@
-.signedup {
+.completed-container {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -19,25 +19,29 @@
   color: #fff;
 }
 
-.signedup img {
+.completed-container img {
   margin-bottom: 3rem;
 }
 
-.signedup h1 {
+.completed-container h1 {
   font: 700 5.4rem Archivo;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
-.signedup h4 {
+.completed-container h4 {
   font: 500 1.6rem Poppins;
   color: var(--color-text-in-primary);
+
+  width: 70vw;
+  text-align: center;
 }
 
-.signedup h4:nth-child(4) {
+.completed-container h4:nth-child(4) {
   margin-bottom: 5rem;
 }
 
-.signedup button {
+.completed-container button {
   width: 162px;
   height: 5.6rem;
   background: var(--color-secundary);
@@ -54,7 +58,13 @@
   margin-top: 3.2rem;
 }
 
-.signedup button:hover,
-.signedup button:active {
+.completed-container button:hover,
+.completed-container button:active {
   background-color: var(--color-secundary-dark);
+}
+
+@media (min-width: 500px) {
+  .completed-container h4 {
+    width: 500px;
+  }
 }
