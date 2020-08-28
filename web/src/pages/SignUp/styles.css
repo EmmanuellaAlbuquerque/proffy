@@ -1,13 +1,13 @@
-body {
-  background-color: var(--color-background) !important;
-}
-
 #page-signup {
   width: 100vw;
   height: 100vh;
 }
 
 #page-signup .brand-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 100%;
 
   background-color: var(--color-primary);
@@ -36,7 +36,16 @@ body {
   font-weight: 500;
 }
 
+.signup-container .signup-content #comeBack {
+  position: absolute;
+  top: 75px;
+  margin-left: 2rem;
+  margin-bottom: 10rem;
+}
+
 #page-signup .signup-container {
+  margin-top: 100px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,12 +56,14 @@ body {
   color: #32264d;
   margin-bottom: 1rem !important;
   margin-top: 1rem;
+  margin-left: 2rem;
 }
 
 .signup-container .signup-content h4 {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   width: 250px;
   font-weight: 500;
+  margin-left: 2rem;
 }
 
 .signup-container .signup-content .emailInput,
@@ -158,13 +169,7 @@ input:invalid {
   background-color: var(--color-login-button-primary);
 }
 
-.signup-container .signup-content #comeBack {
-  position: absolute;
-  top: 10px;
-  margin-bottom: 10rem;
-}
-
-@media (min-width: 700px) {
+@media (min-width: 802px) {
   #page-signup {
     display: flex;
   }
@@ -194,12 +199,29 @@ input:invalid {
   }
 
   #page-signup .signup-container {
+    margin-top: 0px;
     width: calc(100% - 768px);
   }
 
   .signup-container .signup-content h1 {
     font: 700 3.6rem Poppins;
     margin-bottom: 3rem;
-    margin-top: 0rem;
+    margin-top: 0;
+    margin-left: 0rem;
+  }
+
+  .signup-container .signup-content #comeBack {
+    top: 10px;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .signup-container .signup-content h4 {
+    margin-bottom: 4rem;
+    margin-left: 0rem;
+  }
+
+  #page-signup .brand-container {
+    position: initial;
   }
 }

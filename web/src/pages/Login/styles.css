@@ -1,7 +1,3 @@
-body {
-  background-color: var(--color-background) !important;
-}
-
 #page-login {
   width: 100vw;
   height: 100vh;
@@ -229,7 +225,7 @@ input:invalid {
   opacity: 0.5;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 802px) {
   #page-login {
     display: flex;
   }
