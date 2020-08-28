@@ -106,7 +106,7 @@ function Login() {
                 Lembrar-me
               </label>
 
-              <a href="/forgotPassword">Esqueci minha senha</a>
+              <Link to="/forgotPassword">Esqueci minha senha</Link>
             </div>
 
             <button type="submit" className="disabled">
