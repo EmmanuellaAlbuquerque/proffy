@@ -45,6 +45,28 @@
   margin-top: 1rem;
 }
 
+.login-container .login-content .warning {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+
+  color: #df523f;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Archive';
+
+  display: flex;
+  align-items: center;
+}
+
+.login-container .login-content .warning img {
+  margin-right: 1rem;
+}
+
+.login-container .login-content .warning h4 {
+  width: 300px;
+}
+
 .login-container .login-content .emailInput,
 .login-container .login-content .passwordInput {
   width: 35.2rem;

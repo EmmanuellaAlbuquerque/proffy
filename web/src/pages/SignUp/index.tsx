@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 
@@ -6,13 +6,15 @@ import Input from '../../components/Input';
 import logo from '../../assets/images/logo.svg';
 import backIcon from '../../assets/images/icons/back.svg';
 
+import api from '../../services/api';
+
 import './styles.css';
 
 // sign up
 function SignUp() {
   const history = useHistory();
   const [name, setName] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [lastname, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [eyeSelected, setEyeSelected] = useState(false);
@@ -30,10 +32,10 @@ function SignUp() {
   useEffect(() => {
     const span = document.getElementsByTagName('span')[1];
 
-    lastName
+    lastname
       ? span.classList.add('scaledPlaceholder')
       : span.classList.remove('scaledPlaceholder');
-  }, [lastName]);
+  }, [lastname]);
 
   useEffect(() => {
     const span = document.getElementsByTagName('span')[2];
@@ -55,17 +57,31 @@ function SignUp() {
   useEffect(() => {
     const button = document.getElementsByTagName('button')[0];
 
-    name && lastName && email && password
+    name && lastname && email && password
       ? button.classList.remove('disabled')
       : button.classList.add('disabled');
-  }, [name, lastName, email, password]);
+  }, [name, lastname, email, password]);
 
   function toggleChangePasswordView() {
     setEyeSelected(!eyeSelected);
   }
 
-  function handleUserSignUp() {
-    history.push('/signedup');
+  function handleUserSignUp(e: FormEvent) {
+    e.preventDefault();
+
+    api
+      .post('register', {
+        name,
+        lastname,
+        email,
+        password,
+      })
+      .then(() => {
+        history.push('/signedup');
+      })
+      .catch(() => {
+        alert('Erro no cadastro!');
+      });
   }
 
   return (
@@ -97,7 +113,7 @@ function SignUp() {
               <label htmlFor="lastname">
                 <Input
                   name="lastname"
-                  value={lastName}
+                  value={lastname}
                   type="text"
                   className="lastNameInput"
                   onChange={(e) => {

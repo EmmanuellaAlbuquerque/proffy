@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import db from "../database/connection";
+import VerifySign from "../utils/VerifySign";
 
 export default class AuthenticateController {
   async create(request: Request, response: Response) {
@@ -8,16 +9,16 @@ export default class AuthenticateController {
 
     const { email, password } = request.body;
 
-    const login = await db("users").where("users.email", "=", email);
+    const login = await db("login_data").where("login_data.email", "=", email);
 
     if (login.length > 0) {
-      const { name, encryptedPassword: hash } = login[0];
+      const { fullname, encryptedPassword: hash } = login[0];
 
       bcrypt.compare(password, hash, function (err: Error, result: Boolean) {
         if (result) {
           var token = JWTTokens.createJWT(
             {
-              name,
+              fullname,
               email,
               password,
             },
@@ -26,17 +27,20 @@ export default class AuthenticateController {
 
           try {
             JWTTokens.validateJWT(token);
-            return response.json({ console: "valid token", token });
+            // const decoded = VerifySign(token);
+            // return response.json({ decoded });
+            return response.json({ valid_token: true, token });
           } catch (err) {
-            return response.json({ console: "faild validation", token });
+            return response.json({ valid_token: false, token });
           }
         } else {
-          return response.json({ console: "Senha Inválida!" });
+          return response.json({ password: false });
         }
       });
     } else {
       return response.json({
-        console: "Email não cadastrado. Usuário não axiste.",
+        // Email não cadastrado. Usuário não existe.
+        email: false,
       });
     }
   }

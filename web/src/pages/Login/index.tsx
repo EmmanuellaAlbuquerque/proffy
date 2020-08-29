@@ -1,18 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, FormEvent } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
 import Input from '../../components/Input';
 
 import logo from '../../assets/images/logo.svg';
 import purpleHeart from '../../assets/images/icons/purple-heart.svg';
+import redWarning from '../../assets/images/icons/red-warning.svg';
+
+import api from '../../services/api';
 
 import './styles.css';
 
+interface warningErrorProps {
+  email?: boolean;
+  password?: boolean;
+  valid_token?: boolean;
+}
+
 // sign in
 function Login() {
+  const history = useHistory();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [eyeSelected, setEyeSelected] = useState(false);
+  const [warning, setWarning] = useState(false);
+  const [warningError, setwarningError] = useState<warningErrorProps>(
+    { email: true, password: true, valid_token: false },
+  );
 
   // for now gambiarra, styled components should resolve this
   useEffect(() => {
@@ -43,7 +57,41 @@ function Login() {
     setEyeSelected(!eyeSelected);
   }
 
-  function handleUserLogin() {}
+  function warningErrorContent(warning: warningErrorProps) {
+    if (warning.email === false) {
+      return 'O email inserido não corresponde a nenhuma conta. Tente novamente.';
+    } else if (warning.password === false) {
+      return 'A senha inserida está incorreta. Tente novamente.';
+    } else {
+      return '';
+    }
+  }
+
+  async function handleUserLogin(e: FormEvent) {
+    e.preventDefault();
+
+    const response = await api.post('login', {
+      email,
+      password,
+    });
+
+    setwarningError({
+      email: response.data.email,
+      password: response.data.password,
+      valid_token: response.data.valid_token,
+    });
+
+    if (response.data.valid_token) {
+      history.push('/home');
+    }
+
+    if (
+      response.data.email == false ||
+      response.data.password == false
+    ) {
+      setWarning(true);
+    }
+  }
 
   return (
     <div id="page-login">
@@ -59,6 +107,13 @@ function Login() {
           <h1>Fazer login</h1>
 
           <form onSubmit={handleUserLogin}>
+            {warning && (
+              <div className="warning">
+                <img src={redWarning} alt="redWarningIcon" />
+                <h4>{warningErrorContent(warningError)}</h4>
+              </div>
+            )}
+
             <div className="relativeInputSpan">
               <label htmlFor="Email">
                 <Input
