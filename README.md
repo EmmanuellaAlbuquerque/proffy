@@ -14,16 +14,15 @@
 
 <p align="center">🚀 Aplicativo para conectar alunos e professores.</p>
 
-:pushpin: Tabela de conteúdos
-=================
+# :pushpin: Tabela de conteúdos
 
-   * [Sobre](#Sobre)
-   * [Funcionalidades](#Funcionalidades)
-   * [Como rodar ?](#run)
-      * [Front-End Web](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/web#como-rodar)
-      * [Back-End Node.js](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/server#como-rodar-)
-      * [Front-End Mobile](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/mobile#como-rodar)
-   * [Tecnologias](#hammer-Tecnologias)
+- [Sobre](#Sobre)
+- [Funcionalidades](#Funcionalidades)
+- [Como rodar ?](#run)
+  - [Front-End Web](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/web#como-rodar)
+  - [Back-End Node.js](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/server#como-rodar-)
+  - [Front-End Mobile](https://github.com/EmmanuellaAlbuquerque/proffy/tree/master/mobile#como-rodar)
+- [Tecnologias](#hammer-Tecnologias)
 
 <h4 align="center"> 
 	🚧  Projeto 🚀 em construção...  🚧
@@ -36,6 +35,7 @@
 </div>
 
 ## :mag_right: Sobre
+
 Aplicação criada durante a semana Next Level Week, evento da plataforma Rocketseat. O projeto visa estabelecer contato entre alunos e professores. O professor cadastra a matéria que deseja dar aula, o dia da semana e o horário da aula que melhor atende ao seu cronograma, com isso os alunos podem entrar em contato realizando conexões.
 
 ## :hammer: Tecnologias
@@ -51,6 +51,7 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 ## :bookmark_tabs: Funcionalidades
 
 ### Aula 1: Proffy-Web
+
 - [x] Criando estrutura da landing page
 - [x] Estilizando landing page
 - [x] Configurando navegação do app
@@ -59,6 +60,7 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [x] Criando componentes comuns (Teacher Item)
 
 ### Aula 2: Proffy-Server
+
 - [x] Identificando casos de uso
 - [x] Configurando conexão com o banco
 - [x] Criando tabelas no banco de dados
@@ -67,6 +69,7 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [x] Criação e total de coneções
 
 ### Aula 3: Finalizando Front-End
+
 - [x] Estruturando página de cadastro
 - [x] Estilizando página de cadastro
 - [x] Preparando cadastro de horários
@@ -75,6 +78,7 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [x] Listagem de professores
 
 ### Aula 4: Estruturando app mobile
+
 - [x] Criando projeto com expo
 - [x] Estruturando Landing Page
 - [x] Estilizando Landing Page
@@ -85,6 +89,7 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [x] Componente Page Header
 
 ### Aula 5: Finalizando app mobile
+
 - [x] Lista de professores
 - [x] Lista de professores
 - [x] Filtro de professores
@@ -96,13 +101,18 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [x] Listando favoritos
 
 ### :star: Extras
+
 - [x] feat(mobile): KeyboardAvoidingView in TeacherList
-- [x] feat(web): Página de Login ``**Em Construção**``
+- [x] feat(web): Página de Cadastro
+- [x] feat(web): Página de Login
+- [x] feat(web): Página de Esqueceu a senha
+- [x] feat(web): Componente Completed
 - [x] Autenticação de usuários
-    - [x] feat(server): criptografia de senhas com bcrypt
+  - [x] feat(server): criptografia de senhas com bcrypt
 - [ ] Mantendo o usuário logado por um tempo determinado com tokens JWT (JSON web token)
 
 ### Ferramentas de Prototipagem
+
 - [Proffy-Web](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web)
 - [Proffy-Mobile](https://www.figma.com/file/e33KvgUpFdunXxJjHnK7CG/Proffy-Mobile)
 - [Whimsical NLW 02](https://whimsical.com/4Ug5pJLABvCj2NWQXyuK38)
@@ -111,9 +121,11 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [Layout dos desafios Proffy](https://www.notion.so/Layout-dos-desafios-Proffy-b65b509655194c02b3b4c9d4c74b78b4)
 
 ## :memo: Licença
+
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## ✍️ Autor
+
 ---
 
 <a href="https://github.com/EmmanuellaAlbuquerque">
@@ -126,6 +138,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 </sub>
 </a> 
 <a href="https://github.com/EmmanuellaAlbuquerque/proffy" title="proffy">🚀👩‍🚀</a>
-
 
 Made with ❤️ by Emmanuella Albuquerque
