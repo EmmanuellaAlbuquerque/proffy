@@ -13,12 +13,12 @@ import ResetCompleted from './pages/ResetCompleted';
 function Routes() {
   return (
     <BrowserRouter>
-      <Route path="/" exact component={Login} />
+      <Route path="/" exact component={Lading} />
+      <Route path="/signin" component={Login} />
       <Route path="/signup" component={SignUp} />
       <Route path="/signedup" component={SignUpCompleted} />
       <Route path="/forgotPassword" component={ForgotPassword} />
       <Route path="/reset" component={ResetCompleted} />
-      <Route path="/home" component={Lading} />
       <Route path="/study" component={TeacherList} />
       <Route path="/give-classes" component={TeacherForm} />
     </BrowserRouter>

@@ -110,6 +110,7 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - [x] Autenticação de usuários
   - [x] feat(server): criptografia de senhas com bcrypt
 - [ ] Mantendo o usuário logado por um tempo determinado com tokens JWT (JSON web token)
+- [ ] Usuário com o mesmo E-mail 
 
 ### Ferramentas de Prototipagem
 

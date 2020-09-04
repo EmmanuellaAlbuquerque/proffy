@@ -82,12 +82,25 @@ function Login() {
     });
 
     if (response.data.valid_token) {
-      history.push('/home');
+      await api
+        .post('user', {
+          headers: {
+            Authorization: `Bearer ${response.data.token}`,
+          },
+        })
+        .then(() => {
+          console.log('Sucess');
+          localStorage.setItem('token', response.data.token);
+        })
+        .catch((error) => {
+          console.log('Error', error);
+        });
+      history.push('/');
     }
 
     if (
-      response.data.email == false ||
-      response.data.password == false
+      response.data.email === false ||
+      response.data.password === false
     ) {
       setWarning(true);
     }

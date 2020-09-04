@@ -24,7 +24,7 @@ const Completed: React.FC<CompletedProps> = ({
       <h1>{title}</h1>
       <h4>{subtitle}</h4>
       {subtitleExtra && <h4>{subtitleExtra}</h4>}
-      <Link to="/" style={{ textDecoration: 'none' }}>
+      <Link to="/signin" style={{ textDecoration: 'none' }}>
         <button type="button">{buttonText}</button>
       </Link>
     </div>

@@ -1,15 +1,14 @@
-import { Request, Response } from "express";
-import db from "../database/connection";
-import VerifySign from "../utils/VerifySign";
+import { Request, Response } from 'express';
+import db from '../database/connection';
 
 export default class AuthenticateController {
   async create(request: Request, response: Response) {
-    const bcrypt = require("bcrypt");
-    var JWTTokens = require("jwt-tokens");
+    const bcrypt = require('bcrypt');
+    var JWTTokens = require('jwt-tokens');
 
     const { email, password } = request.body;
 
-    const login = await db("login_data").where("login_data.email", "=", email);
+    const login = await db('login_data').where('login_data.email', '=', email);
 
     if (login.length > 0) {
       const { fullname, encryptedPassword: hash } = login[0];
@@ -27,8 +26,6 @@ export default class AuthenticateController {
 
           try {
             JWTTokens.validateJWT(token);
-            // const decoded = VerifySign(token);
-            // return response.json({ decoded });
             return response.json({ valid_token: true, token });
           } catch (err) {
             return response.json({ valid_token: false, token });
