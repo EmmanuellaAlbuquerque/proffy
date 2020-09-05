@@ -1,17 +1,38 @@
+/* ---------------Loading-------------- */
 .loading {
-  border: 0.1rem var(--color-secundary) solid;
   width: 20rem;
   height: 20rem;
+  position: relative;
+}
+
+.loading-border {
+  width: 20rem;
+  height: 20rem;
+
   border-radius: 50%;
+  border: 0.1rem solid var(--color-secundary);
+  border-left-color: var(--color-text-title);
 
-  text-align: center;
-  display: grid;
-  place-items: center;
+  animation: load 1s linear infinite;
 }
 
-.loading h1 {
-  color: var(--color-secundary);
+@keyframes load {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
+
+.loading span {
+  position: absolute;
+  margin-left: 5rem;
+  line-height: 20rem;
+  color: var(--color-secundary-dark);
+  font-weight: 900;
+}
+/* ------------------------------------ */
 
 #page-landing {
   width: 100vw;

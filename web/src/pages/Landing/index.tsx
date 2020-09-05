@@ -122,7 +122,8 @@ function Lading() {
         </div>
       ) : (
         <div className="loading">
-          <h1> Loading </h1>
+          <span>Carregando...</span>
+          <div className="loading-border"></div>
         </div>
       )}
     </>
