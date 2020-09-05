@@ -9,7 +9,11 @@
   <a href="https://github.com/EmmanuellaAlbuquerque/proffy/commits/master">
     <img src="https://img.shields.io/github/last-commit/EmmanuellaAlbuquerque/proffy?color=%2304BF58" alt="last commit">
   </a>
+  <img src="https://img.shields.io/github/languages/top/EmmanuellaAlbuquerque/proffy?color=%2304BF58" alt="top language">
   <img src="https://img.shields.io/github/repo-size/EmmanuellaAlbuquerque/proffy?color=%2304BF58" alt="repo size">
+  <a href="https://insomnia.rest/run/?label=Proffy&uri=https://raw.githubusercontent.com/EmmanuellaAlbuquerque/proffy/master/server/src/utils/Insomnia_2020-08-06.json">
+    <img src="https://insomnia.rest/images/run.svg" alt="insomnia run svg">
+  </a>
 </div>
 
 <p align="center">🚀 Aplicativo para conectar alunos e professores.</p>
