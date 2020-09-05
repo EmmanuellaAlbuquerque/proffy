@@ -102,15 +102,26 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 
 ### :star: Extras
 
-- [x] feat(mobile): KeyboardAvoidingView in TeacherList
-- [x] feat(web): Página de Cadastro
+#### Front-end
+
 - [x] feat(web): Página de Login
+- [x] feat(web): Página de Cadastro
 - [x] feat(web): Página de Esqueceu a senha
-- [x] feat(web): Componente Completed
-- [x] Autenticação de usuários
-  - [x] feat(server): criptografia de senhas com bcrypt
-- [ ] Mantendo o usuário logado por um tempo determinado com tokens JWT (JSON web token)
-- [ ] Usuário com o mesmo E-mail 
+- [x] feat(web): Página de 'Cadastro realizado'
+- [x] feat(web): Página de 'Redefinição concluída'
+- [x] feat(web): Página de Loading
+- [x] feat(web): Página Home atualizada com avatar do user
+- [ ] feat(web): Página de Perfil do Usuário
+- [x] feat(mobile): KeyboardAvoidingView in TeacherList
+
+#### Back-end
+
+- [x] Cadastro de usuário
+- [x] Autenticação de usuário
+  - [x] Criptografia de senhas com bcrypt
+- [x] Autorização de usuário
+  - [x] Mantendo o usuário logado por um tempo determinado com tokens JWT (JSON Web Token)
+- [ ] Usuário com o mesmo E-mail
 
 ### Ferramentas de Prototipagem
 

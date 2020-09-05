@@ -1,3 +1,43 @@
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 1rem;
+
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+
+  background-color: var(--color-background);
+}
+
+figure figcaption {
+  margin-top: 1.5rem;
+
+  font: 700 3.6rem Archivo;
+  color: #fff;
+}
+
+.center {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+
+  margin-top: 8rem !important;
+}
+
+.back {
+  background-image: url('../../assets/images/rotated-success-background.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100vw 60vh;
+}
+
 .page-header {
   display: flex;
   flex-direction: column;
@@ -5,13 +45,18 @@
 }
 
 .page-header .top-bar-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+
+  font: 500 1.6rem Archivo;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--color-text-in-primary);
-  padding: 1.6rem 0;
+  padding: 1.6rem 12rem;
+
+  background-color: var(--color-primary-dark);
+  border-bottom: 0.1rem solid var(--color-primary-darker);
 }
 
 .page-header .top-bar-container a {
@@ -53,8 +98,8 @@
     height: 340px;
   }
 
-  .page-header .top-bar-container {
-    max-width: 1100px;
+  .pageHeight {
+    height: 410px;
   }
 
   .page-header .header-content {
