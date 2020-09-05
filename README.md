@@ -3,6 +3,9 @@
 </div>
 
 <div align="center">
+  <a href="https://insomnia.rest/run/?label=Proffy&uri=https://raw.githubusercontent.com/EmmanuellaAlbuquerque/proffy/master/server/src/utils/Insomnia_2020-08-06.json">
+    <img src="https://insomnia.rest/images/run.svg" alt="insomnia run svg">
+  </a>
   <a href="https://github.com/EmmanuellaAlbuquerque/proffy/blob/master/LICENSE">
   <img src="https://img.shields.io/github/license/emmanuellaalbuquerque/proffy?color=%2304BF58" alt="MIT License">
   </a> 
@@ -11,9 +14,6 @@
   </a>
   <img src="https://img.shields.io/github/languages/top/EmmanuellaAlbuquerque/proffy?color=%2304BF58" alt="top language">
   <img src="https://img.shields.io/github/repo-size/EmmanuellaAlbuquerque/proffy?color=%2304BF58" alt="repo size">
-  <a href="https://insomnia.rest/run/?label=Proffy&uri=https://raw.githubusercontent.com/EmmanuellaAlbuquerque/proffy/master/server/src/utils/Insomnia_2020-08-06.json">
-    <img src="https://insomnia.rest/images/run.svg" alt="insomnia run svg">
-  </a>
 </div>
 
 <p align="center">🚀 Aplicativo para conectar alunos e professores.</p>
